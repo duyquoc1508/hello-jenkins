@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
   res.send('Hello Jenkins');
 });
 
+app.get('/test', (req, res) => {
+  res.send('Test jenkins auto pull');
+});
+
 app.listen(PORT, () => {
   console.log(`App listening at http://${HOST}:${PORT}`);
 });
