@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/test', (req, res) => {
-  res.send('Test jenkins auto pull');
+  res.send('Test jenkins auto pull 2');
 });
 
 app.listen(PORT, () => {
