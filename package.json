@@ -1,12 +1,16 @@
 {
-  "name": "test",
+  "name": "hello_jenkins",
   "version": "1.0.0",
-  "description": "",
+  "description": "Create project nodejs and deploy with docker + jenkins",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "duyquoc.nguyen.kb@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
