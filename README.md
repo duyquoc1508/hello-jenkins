@@ -33,3 +33,20 @@ Build project using docker (Dockerfile)
 Deploy project using jenkins (Jenkinsfile)
 
 ![alt text](vendor/images/docker-jenkins-1.png)
+
+Write a Jenkins Pipeline specification in a Jenkinsfile.
+
+Now, we’ll just need to tell Jenkins two things:
+
+1. Where to find our code
+2. What credentials to use to publish the Docker image
+
+#### Configuring Docker Hub with Jenkins
+
+## Start jenkins
+
+```
+docker run -it -d --name myjenkins -p 8080:8080 -p 50000:50000 -v /var/jenkins_home jenkins/jenkins
+```
+
+Reference: https://tutorials.releaseworksacademy.com/learn/building-your-first-docker-image-with-jenkins-2-guide-for-developers
